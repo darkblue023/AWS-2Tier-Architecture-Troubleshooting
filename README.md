@@ -73,6 +73,9 @@ This private key will be ignored.
 Load key "RDS-test-key.pem": bad permissions
 ec2-user@13.211.130.148: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
 
+```text
+
+
 - **分析**：Windows NTFS 文件系统在下载 `.pem` 密钥文件时，默认使其继承了父目录的宽松权限。这使得当前账户之外的其他用户也可能拥有读取该私钥的权限。SSH 客户端的安全机制识别到此风险，主动阻断了连接。
 - **解决**：查阅 AWS EC2 官方排障指南，决定重置 Windows 文件权限。在 CMD 中调用 `icacls` 权限管理命令：
 
