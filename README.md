@@ -1,5 +1,5 @@
 # AWS-2Tier-Architecture-Troubleshooting# AWS 2-Tier 安全架构部署与内网数据库连通性排障项目记录
-
+[日本語版 (Japanese Version) はこちら](./README-ja.md)
 ## Summary
 在现代公有云和混合云环境中，核心数据资产的网络隔离与访问控制是基础设施安全的重中之重。本报告记录了在 AWS 环境中从零构建符合最佳实践的双层隔离网络（2-Tier Architecture）的全过程。通过自定义 VPC 划分公有与私有子网，并配置严格安全组（Security Groups）的策略，实现了对 Amazon RDS 数据库的安全内网连接。
 
