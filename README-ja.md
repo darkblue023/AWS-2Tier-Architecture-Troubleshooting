@@ -15,7 +15,7 @@ AWS 2-Tier セキュアアーキテクチャ構築および VPC 内 DB 接続ト
 サブネット設計 (Subnets)： 2つのパブリックサブネット（Public Subnets、Internet Gateway 経由でインターネットに接続）と2つのプライベートサブネット（Private Subnets、パブリックルーティングなし）をデプロイ。
 ファイアウォール戦略： 2重の防御線を構築。フロントエンドは Web-SG セキュリティグループでパブリック SSH トラフィックのインバウンドを制御し、バックエンドは DB-SG セキュリティグループで Web-SG からの 3306 端口（MySQL）の内部トラフィックのみを許可。
 
-![VPCとサブネット構成の確認画面](./AWS-Project/images/vpc-subnets-config.png)
+![VPCとサブネット構成の確認画面](.images/vpc-subnets-config.png)
 
 使用ツール (Tools)
 Amazon VPC： 基礎となるネットワーク隔離環境とルーティング制御を提供。
